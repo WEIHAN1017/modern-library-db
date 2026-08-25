@@ -34,7 +34,7 @@ Install:
 ### Clone
 
 ```bash
-git clone https://github.com/YOUR_NAME/modern-library-db.git
+git clone https://github.com/WEIHAN1017/modern-library-db.git
 cd modern-library-db
 ```
 
