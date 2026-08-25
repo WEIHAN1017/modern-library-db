@@ -1,11 +1,89 @@
-# Modern Library Database
+# Library Atlas
 
-A modern full-stack library management project built with React, FastAPI, and PostgreSQL.
+A modern full-stack library database project built with:
 
-## Core Features
+- React
+- Tailwind CSS
+- FastAPI
+- PostgreSQL
+- SQLAlchemy
+- Docker Compose
 
-- Add book editions
-- Delete editions
+## Features
+
+- Add books and editions
+- Prevent duplicate editions
+- Delete individual editions
 - Delete complete books
-- Search by title or author
-- Sort by title or author
+- Search books by title or author
+- Sort by title
+- Sort by author
+- Display library statistics
+
+---
+
+## Quick Start
+
+### Requirements
+
+Install:
+
+- Git
+- Docker Desktop
+
+### Clone
+
+```bash
+git clone https://github.com/YOUR_NAME/modern-library-db.git
+cd modern-library-db
+```
+
+### Start
+
+```bash
+docker compose up --build
+```
+
+Open:
+
+```text
+http://localhost:5173
+```
+
+FastAPI documentation:
+
+```text
+http://localhost:8000/docs
+```
+
+### Stop
+
+```bash
+docker compose down
+```
+
+### Delete database data too
+
+```bash
+docker compose down -v
+```
+
+---
+
+## Development Architecture
+
+```text
+React
+  |
+  | REST API
+  v
+FastAPI
+  |
+  | SQLAlchemy
+  v
+PostgreSQL
+```
+
+## Original Project
+
+This project modernizes a command-line C++ Library Database assignment into a full-stack web application.
